@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: techefx-zuul-api-gateway-server
+
+
+server:
+  port: ${port:8765}
+
+
+zuul:
+  routes:
+    product-enquiry: /product-enquiry/**
+    url: http://localhost:8700/
